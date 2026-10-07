@@ -1,0 +1,267 @@
+A)
+using System;
+
+class ProgramA
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro positivo: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i <= numero; i += 2)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+
+B)
+class ProgramB
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(numero + " x " + i + " = " + (numero * i));
+        }
+    }
+}
+
+C)
+using System;
+
+class ProgramC
+{
+    static void Main()
+    {
+        Console.Write("Quantos números você deseja digitar? ");
+        int quantidade = int.Parse(Console.ReadLine());
+
+        int soma = 0;
+
+        for (int i = 1; i <= quantidade; i++)
+        {
+            Console.Write("Digite o " + i + "º número: ");
+            int numero = int.Parse(Console.ReadLine());
+
+            soma += numero;
+        }
+
+        Console.WriteLine("A soma dos números é: " + soma);
+    }
+}
+
+D)
+using System;
+
+class ProgramD
+{
+    static void Main()
+    {
+        string senhaCorreta = "1234";
+        bool acertou = false;
+
+        for (int tentativa = 1; tentativa <= 3; tentativa++)
+        {
+            Console.Write("Digite a senha: ");
+            string senha = Console.ReadLine();
+
+            if (senha == senhaCorreta)
+            {
+                Console.WriteLine("Senha correta! Acesso permitido.");
+                acertou = true;
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Senha incorreta.");
+            }
+        }
+
+        if (!acertou)
+        {
+            Console.WriteLine("Você excedeu o limite de 3 tentativas.");
+        }
+    }
+}
+
+E)
+using System;
+
+class ProgramE
+{
+    static void Main()
+    {
+        int soma = 0;
+        int numero;
+
+        do
+        {
+            Console.Write("Digite um número inteiro: ");
+            numero = int.Parse(Console.ReadLine());
+
+            if (numero >= 0)
+            {
+                soma += numero;
+            }
+
+        } while (numero >= 0);
+
+        Console.WriteLine("A soma dos números é: " + soma);
+    }
+}
+
+F)
+using System;
+
+class ProgramF
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro positivo: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i <= numero; i += 2)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+
+G)
+using System;
+
+class ProgramG
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro positivo: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i <= numero; i += 2)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+
+H)
+using System;
+
+class ProgramH
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(numero + " x " + i + " = " + (numero * i));
+        }
+    }
+}
+
+i)
+using System;
+
+class ProgramI
+{
+    static void Main()
+    {
+        Console.Write("Quantos números você deseja digitar? ");
+        int quantidade = int.Parse(Console.ReadLine());
+
+        int soma = 0;
+
+        for (int i = 1; i <= quantidade; i++)
+        {
+            Console.Write("Digite o " + i + "º número: ");
+            int numero = int.Parse(Console.ReadLine());
+
+            soma += numero;
+        }
+
+        Console.WriteLine("A soma dos números é: " + soma);
+    }
+}
+
+J)
+using System;
+
+class ProgramJ
+{
+    static void Main()
+    {
+        string senhaCorreta = "1234";
+        bool acertou = false;
+
+        for (int tentativa = 1; tentativa <= 3; tentativa++)
+        {
+            Console.Write("Digite a senha: ");
+            string senha = Console.ReadLine();
+
+            if (senha == senhaCorreta)
+            {
+                Console.WriteLine("Senha correta! Acesso permitido.");
+                acertou = true;
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Senha incorreta.");
+            }
+        }
+
+        if (!acertou)
+        {
+            Console.WriteLine("Você excedeu o limite de 3 tentativas.");
+        }
+    }
+}
+
+K)
+using System;
+
+class ProgramK
+{
+    static void Main()
+    {
+        int soma = 0;
+        int numero;
+
+        do
+        {
+            Console.Write("Digite um número inteiro: ");
+            numero = int.Parse(Console.ReadLine());
+
+            if (numero >= 0)
+            {
+                soma += numero;
+            }
+
+        } while (numero >= 0);
+
+        Console.WriteLine("A soma dos números é: " + soma);
+    }
+}
+
+L)
+using System;
+
+class ProgramL
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro positivo: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i <= numero; i += 2)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
