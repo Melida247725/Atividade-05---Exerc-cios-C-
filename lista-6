@@ -1,0 +1,283 @@
+A)
+using System;
+
+class ProgramA
+{
+    static void Main()
+    {
+        DateTime agora = DateTime.Now;
+
+        Console.WriteLine("Data e hora atual: " + agora);
+    }
+}
+
+B)
+using System;
+
+class ProgramB
+{
+    static void Main()
+    {
+        Console.Write("Digite a primeira data (dd/MM/yyyy): ");
+        DateTime data1 = DateTime.Parse(Console.ReadLine());
+
+        Console.Write("Digite a segunda data (dd/MM/yyyy): ");
+        DateTime data2 = DateTime.Parse(Console.ReadLine());
+
+        TimeSpan diferenca = data2 - data1;
+
+        Console.WriteLine("Diferença em dias: " + Math.Abs(diferenca.Days));
+    }
+}
+
+C)
+using System;
+
+class ProgramC
+{
+    static void Main()
+    {
+        Console.Write("Digite sua data de nascimento (dd/MM/yyyy): ");
+        DateTime nascimento = DateTime.Parse(Console.ReadLine());
+
+        DateTime hoje = DateTime.Today;
+
+        int idade = hoje.Year - nascimento.Year;
+
+        if (nascimento > hoje.AddYears(-idade))
+        {
+            idade--;
+        }
+
+        Console.WriteLine("Sua idade é: " + idade + " anos");
+    }
+}
+
+D)using System;
+
+class ProgramD
+{
+    static void Main()
+    {
+        Console.Write("Digite uma data (dd/MM/yyyy): ");
+        DateTime data = DateTime.Parse(Console.ReadLine());
+
+        bool feriado = (data.Day == 1 && data.Month == 1) ||
+                       (data.Day == 21 && data.Month == 4) ||
+                       (data.Day == 1 && data.Month == 5) ||
+                       (data.Day == 7 && data.Month == 9) ||
+                       (data.Day == 12 && data.Month == 10) ||
+                       (data.Day == 2 && data.Month == 11) ||
+                       (data.Day == 15 && data.Month == 11) ||
+                       (data.Day == 20 && data.Month == 11) ||
+                       (data.Day == 25 && data.Month == 12);
+
+        if (feriado)
+        {
+            Console.WriteLine("A data é um feriado nacional.");
+        }
+        else
+        {
+            Console.WriteLine("A data não é um feriado nacional.");
+        }
+    }
+}
+
+E)
+using System;
+
+class ProgramE
+{
+    static void Main()
+    {
+        Console.WriteLine("MENU");
+        Console.WriteLine("1 - Cadastrar");
+        Console.WriteLine("2 - Consultar");
+        Console.WriteLine("3 - Sair");
+
+        Console.Write("Escolha uma opção: ");
+        int opcao = int.Parse(Console.ReadLine());
+
+        switch (opcao)
+        {
+            case 1:
+                Console.WriteLine("Você escolheu Cadastrar.");
+                break;
+
+            case 2:
+                Console.WriteLine("Você escolheu Consultar.");
+                break;
+
+            case 3:
+                Console.WriteLine("Você escolheu Sair.");
+                break;
+
+            default:
+                Console.WriteLine("Opção inválida.");
+                break;
+        }
+    }
+}
+
+F)
+using System;
+
+class ProgramF
+{
+    static void Main()
+    {
+        Console.Write("Digite um número inteiro: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        if (numero > 0)
+        {
+            Console.WriteLine("O número é positivo.");
+        }
+        else if (numero < 0)
+        {
+            Console.WriteLine("O número é negativo.");
+        }
+        else
+        {
+            Console.WriteLine("O número é zero.");
+        }
+    }
+}
+
+G)
+using System;
+
+class ProgramG
+{
+    static void Main()
+    {
+        Console.Write("Digite uma cor (vermelho, azul ou verde): ");
+        string cor = Console.ReadLine().ToLower();
+
+        switch (cor)
+        {
+            case "vermelho":
+                Console.WriteLine("Você escolheu a cor vermelha.");
+                break;
+
+            case "azul":
+                Console.WriteLine("Você escolheu a cor azul.");
+                break;
+
+            case "verde":
+                Console.WriteLine("Você escolheu a cor verde.");
+                break;
+
+            default:
+                Console.WriteLine("Cor inválida.");
+                break;
+        }
+    }
+}
+
+H)
+using System;
+
+class ProgramH
+{
+    static void Main()
+    {
+        Console.Write("Digite uma letra: ");
+        char letra = char.ToLower(Console.ReadKey().KeyChar);
+
+        Console.WriteLine();
+
+        switch (letra)
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                Console.WriteLine("É uma vogal.");
+                break;
+
+            default:
+                Console.WriteLine("É uma consoante.");
+                break;
+        }
+    }
+}
+
+I)
+using System;
+
+class ProgramI
+{
+    static void Main()
+    {
+        Console.Write("Digite um número de 1 a 7: ");
+        int dia = int.Parse(Console.ReadLine());
+
+        switch (dia)
+        {
+            case 1:
+                Console.WriteLine("Domingo");
+                break;
+
+            case 2:
+                Console.WriteLine("Segunda-feira");
+                break;
+
+            case 3:
+                Console.WriteLine("Terça-feira");
+                break;
+
+            case 4:
+                Console.WriteLine("Quarta-feira");
+                break;
+
+            case 5:
+                Console.WriteLine("Quinta-feira");
+                break;
+
+            case 6:
+                Console.WriteLine("Sexta-feira");
+                break;
+
+            case 7:
+                Console.WriteLine("Sábado");
+                break;
+
+            default:
+                Console.WriteLine("Número inválido.");
+                break;
+        }
+    }
+}
+
+J)
+using System;
+
+class ProgramJ
+{
+    static void Main()
+    {
+        Console.Write("Digite o tamanho da camiseta (P, M ou G): ");
+        string tamanho = Console.ReadLine().ToUpper();
+
+        switch (tamanho)
+        {
+            case "P":
+                Console.WriteLine("Tamanho P - R$ 30,00");
+                break;
+
+            case "M":
+                Console.WriteLine("Tamanho M - R$ 35,00");
+                break;
+
+            case "G":
+                Console.WriteLine("Tamanho G - R$ 40,00");
+                break;
+
+            default:
+                Console.WriteLine("Tamanho inválido.");
+                break;
+        }
+    }
+}
